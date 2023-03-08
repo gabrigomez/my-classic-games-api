@@ -43,12 +43,13 @@ app.delete("/game/:_id", deleteGame);
 //Credencials
 const dbUser = process.env.DB_USER;
 const dbPass = process.env.DB_PASS;
+const port = process.env.PORT || 3001;
 
 const dbLink = `mongodb+srv://${dbUser}:${dbPass}@cluster0.1q4iqd6.mongodb.net/?retryWrites=true&w=majority`
 mongoose.set("strictQuery", false);
 
 mongoose.connect(dbLink).then(() => {
-  app.listen(3001)
+  app.listen(port)
   console.log('Conected to MongoDB')
 
 }).catch((err) => console.log(err));
