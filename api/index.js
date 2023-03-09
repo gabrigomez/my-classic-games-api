@@ -17,7 +17,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.status(200).json({ msg: "Welcome to the my-game-list api"});
 });
 
