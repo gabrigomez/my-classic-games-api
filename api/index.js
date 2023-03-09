@@ -44,8 +44,10 @@ app.delete("/game/:_id", deleteGame);
 const dbUser = process.env.DB_USER;
 const dbPass = process.env.DB_PASS;
 const port = process.env.PORT || 3001;
+const user = process.env.MONGODB_URI
 
 const dbLink = `mongodb+srv://${dbUser}:${dbPass}@cluster0.1q4iqd6.mongodb.net/?retryWrites=true&w=majority`
+
 mongoose.set("strictQuery", false);
 
 mongoose.connect(dbLink).then(() => {
@@ -54,6 +56,6 @@ mongoose.connect(dbLink).then(() => {
 
 }).catch((err) => console.log(err));
 
-export default app;
+//export default app;
 //module.exports = app;
 
