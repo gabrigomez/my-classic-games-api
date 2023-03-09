@@ -1,15 +1,15 @@
 const express = require('express');
 const cors = require('cors');
-const login = require('./controllers/login');
-const register = require('./controllers/register');
-const editUser = require('./controllers/editUser');
+const login = require('./api/controllers/login');
+const register = require('./api/controllers/register');
+const editUser = require('./api/controllers/editUser');
 
 const mongoose = require('mongoose');
-const addGame = require('./controllers/addGame');
-const getGame = require('./controllers/getGame');
-const showGameDetails = require('./controllers/showGameDetails');
-const deleteGame = require('./controllers/deleteGame');
-const editGame = require('./controllers/editGame');
+const addGame = require('./api/controllers/addGame');
+const getGame = require('./api/controllers/getGame');
+const showGameDetails = require('./api/controllers/showGameDetails');
+const deleteGame = require('./api/controllers/deleteGame');
+const editGame = require('./api/controllers/editGame');
 require('dotenv').config({ path: "api/.env" });
 
 const app = express();
