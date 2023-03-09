@@ -13,7 +13,7 @@ async function showGameDetails (req, res) {
         res.status(201).json(data);
       };
     };
-  });
+  }).clone().catch(function(err){ console.log(err)});
 };
 
 module.exports = showGameDetails;
