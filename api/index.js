@@ -54,5 +54,6 @@ mongoose.connect(dbLink).then(() => {
 
 }).catch((err) => console.log(err));
 
-module.exports = {app};
+//module.exports = {app};
+export default app;
 
