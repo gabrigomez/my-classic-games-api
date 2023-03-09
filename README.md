@@ -12,4 +12,4 @@ As principais ferramentas usadas neste projeto são:
 - MongoDB
 
 
-A versão de front-end completa desta aplicação pode ser encontrada (aqui) (https://github.com/gabrigomez/my-classic-games).
+A versão de front-end completa desta aplicação pode ser encontrada [aqui](https://github.com/gabrigomez/my-classic-games).
